@@ -36,6 +36,12 @@
 }
 
 /* Global */
+*{
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin-top: 0;
+}
 ul{
     list-style-type: none;
 }
@@ -44,9 +50,19 @@ body{
     font-family: "Popins", sans-serif;
     font-size: 18px;
     font-weight: 400;
+    margin: 0;
+}
+.container{
+    width: 100%;
+    max-width: 1288px;
+    margin: 0 auto;
+    padding: 0 24px;
 }
 address{
     font-style: normal;
+}
+.section{
+    padding: 48px 0;
 }
 /* Buttons */
 .button{
@@ -57,6 +73,7 @@ address{
     cursor: pointer;
     line-height: 1.5;
     font-weight: 600;
+    padding: 16px 32px;
 }
 .button:hover{
     background-color: transparent;
@@ -78,14 +95,33 @@ address{
     font-size: 128px;
     font-weight: 900;
     text-align: center;
+    margin-bottom: 0;
 }
 .hero-title .accent{
     color: var(--color-brand-light);
 }
+.hero-section{
+    padding: 272px 0;
+}
 /* Advantages section */
+.traditions-section{
+    padding-top: 96px;
+}
+
+.visually-hiden{
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
 .advantages-list{
     background-color: var(--color-brand-light);
     color: var(--color-primary-light);
+}
+.tradinions-title{
+margin-bottom: 42px;
 }
 /* Section-title */
 .section-title{
@@ -109,12 +145,20 @@ address{
     font-size: 20px;
     font-weight: 300;
 }
+/* Chefs sections */
+.chefs-title{
+    margin-bottom: 80px;
+}
 .chef-title{
     font-size: 40px;
     font-weight: 600;
+    margin-bottom: 16px;
 }
 
 /* Format section */
+.formats-tetle{
+    margin-bottom: 80px;
+}
 .format-title{
     font-size: 44px;
     font-weight: 600;
@@ -122,6 +166,10 @@ address{
 .format-text{
     font-size: 13px;
     font-weight: 300;
+}
+/* Contacn section */
+.contact-title{
+    margin-bottom: 16px;
 }
 /* Footer */
 
