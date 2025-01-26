@@ -1,0 +1,57 @@
+
+.format-card {
+    position: relative;
+    border-radius: 16px;
+    padding: 24px;
+    height: 444px;
+    background-image: linear-gradient(180.00deg, rgba(49, 38, 26, 0) 55.208%, rgba(49, 38, 26, 0.71) 72.917%, rgb(49, 38, 26) 100%);
+    transition: transform 0.5s;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    font-size: 14px;
+    color: var(--color-primary-light);
+}
+
+.format-card:hover {
+    transform: scale(1.05);
+
+}
+
+.formats-list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    border-radius: 16px;
+}
+
+.formats-items {
+    flex-basis: calc((100% - 40px) / 3);
+}
+.format-item{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    
+}
+.formats-title {
+    margin-bottom: 80px;
+}
+
+.format-title {
+    font-size: 44px;
+    font-weight: 600;
+}
+
+.format-text {
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.formats-container {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}

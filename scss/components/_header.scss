@@ -1,0 +1,28 @@
+.header {
+    padding-top: 32px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* background-color: rgb(220, 220, 203); */
+}
+
+.header-menu {
+    display: flex;
+    gap: 64px;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.header-nav {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
