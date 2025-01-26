@@ -239,7 +239,9 @@ address {
   text-transform: uppercase;
 }
 
-/* Formats- section */
+.traditions-container img {
+  border-radius: 50% 50% 0 0;
+} /* Formats- section */
 .format-card {
   position: relative;
   border-radius: 16px;
