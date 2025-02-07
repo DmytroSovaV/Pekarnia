@@ -1,9 +1,51 @@
+.formats-section{
+&__title {
+    margin-bottom: 24px;    
+    @media screen and (min-width:$bp-tablet) {
+        margin-bottom: 80px;
+        
+    }
+}
+&__container {
+    display: flex;
+    gap: 32px;
+    align-items: center;
 
-.format-card {
+}
+&__list {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    @media screen and (min-width:$bp-desktop){
+        flex-direction: row;
+
+    }
+    gap: 20px;
+    border-radius: 16px;
+    
+}
+// &__formats-items {
+//     // display: block;
+//     // display: flex;
+//     // width: ;;
+//     // flex-basis: calc((100% - 40px) / 3);
+// }
+&__format-card {
     position: relative;
     border-radius: 16px;
     padding: 24px;
-    height: 444px;
+    width: 280px;
+    height: 400px;
+    @media screen and (min-width:$bp-mobile){
+        width: 321px;
+        height: 442px;
+    }
+      @media screen and (min-width:$bp-desktop) {
+        flex-wrap: nowrap;
+        width: 349px;
+        height: 444px;
+    
+        }
     background-image: linear-gradient(180.00deg, rgba(49, 38, 26, 0) 55.208%, rgba(49, 38, 26, 0.71) 72.917%, rgb(49, 38, 26) 100%);
     transition: transform 0.5s;
     display: flex;
@@ -12,46 +54,53 @@
     font-size: 14px;
     color: var(--color-primary-light);
 }
-
-.format-card:hover {
-    transform: scale(1.05);
-
-}
-
-.formats-list {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    border-radius: 16px;
-}
-
-.formats-items {
-    flex-basis: calc((100% - 40px) / 3);
-}
-.format-item{
+&__format-item {
     position: absolute;
-    width: 100%;
+    max-width: 100%;
     top: 0;
     left: 0;
     z-index: -1;
-    
-}
-.formats-title {
-    margin-bottom: 80px;
-}
+   
 
-.format-title {
-    font-size: 44px;
+}
+&__format-title {
+    font-size: 24px;
     font-weight: 600;
 }
-
-.format-text {
+&__format-text {
     font-size: 13px;
     font-weight: 300;
 }
-
-.formats-container {
-    display: flex;
-    gap: 32px;
-    align-items: center;
+&__format-card:hover {
+    transform: scale(1.05);
 }
+}
+// .swiper{
+//     display: flex;
+//     flex-direction: column;
+// }
+
+.carousel-button svg{
+    width: 0;
+    height: 0;
+    @media screen and (min-width:$bp-desktop){
+      width: 16px;
+      height: 16px;
+    }
+}
+.carousel-button.next,
+.carousel-button.prev {
+  display: none;
+
+    @media screen and (min-width:$bp-desktop) {
+       display: flex;
+    }
+}
+
+
+
+
+
+
+
+

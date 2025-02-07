@@ -5,24 +5,44 @@
     left: 0;
     width: 100%;
     /* background-color: rgb(220, 220, 203); */
-}
 
-.header-menu {
-    display: flex;
+&__menu {
+    display: none;
+    @media screen and (min-width:$bp-desktop) {
+        display: flex;
+    }
     gap: 64px;
     flex-grow: 1;
     justify-content: center;
 }
-
-.header-nav {
+&__nav {
     flex-grow: 1;
     display: flex;
     align-items: center;
     gap: 40px;
 }
-
-.header-container {
+&__container {
     display: flex;
     align-items: center;
     gap: 40px;
+    }
+&__button{
+    display: none;
+        @media screen and (min-width:$bp-desktop) {
+            display: flex;
+        }
 }
+&__burger{
+    display: block;
+    background-color: transparent;
+    border: 0;
+    fill: var(--color-primary-light);
+    @media screen and (min-width:$bp-desktop) {
+        display: none;
+    }
+}
+   
+}
+
+
+

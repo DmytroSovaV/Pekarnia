@@ -1,32 +1,45 @@
 .traditions-section {
-    padding-top: 96px;
-}
-
-.traditions-title {
-    margin-bottom: 42px;
-}
-.traditions-text .brand {
-    color: var(--color-brand-normal);
-    font-weight: 600;
-}
-
-.traditions-container {
+    padding-top: 0;    
+    @media screen and (min-width:$bp-tablet) {
+        padding-top: 96px;    
+        }
+    
+&__container {
     display: flex;
     justify-content: space-between;
     gap: 40px;
+    }   
+    &__content {
+    max-width: 710px;
+    }
+&__title {
+    margin-bottom: 42px;
 }
+&__text{
 
-.traditions-content {
-    min-width: 710px;
+    font-weight: 400;
 }
-
-.traditions-text.limited {
+&__text--limited {
     max-width: 340px;
 }
-
-.traditions-text .uppercase {
-    text-transform: uppercase;
-}
-.traditions-container img{
+&__container--img{
     border-radius: 50% 50% 0 0;
+}
+&__container--img{
+    max-width: 50%;
+    display: none;
+    @media screen and (min-width:$bp-tablet) {
+     max-width: 650px;
+     display: flex;
+}
+}
+}
+
+.brand {
+    font-weight: 600;
+    color: var(--color-brand-normal);
+}
+
+.uppercase {
+    text-transform: uppercase;
 }
